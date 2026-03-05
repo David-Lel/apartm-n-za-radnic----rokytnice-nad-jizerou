@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apartmán za radnicí 6 by mountain ways</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d1a110' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 3 4 8 5-5 5 15H2L8 3z'%3E%3C/path%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#1a2e35',
+              green: '#2f4f4f',
+              light: '#e0e7e9',
+              gold: '#d1a110',
+            }
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #1e2837;
+    }
+  </style>
+
+  <!-- Import Map: Vyčištěno pro použití pouze React 18 -->
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.292.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+
+  <!-- Babel pro kompilaci JSX v prohlížeči -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- 1. Data a Služby -->
+  <script type="text/babel" data-type="module" src="./data/galleryData.js"></script>
+  <script type="text/babel" data-type="module" src="./data/translations.js"></script>
+
+  <!-- 2. Komponenty -->
+  <script type="text/babel" data-type="module" src="./components/Navbar.js"></script>
+  <script type="text/babel" data-type="module" src="./components/Hero.js"></script>
+  <script type="text/babel" data-type="module" src="./components/Features.js"></script>
+  <script type="text/babel" data-type="module" src="./components/ReservationSection.js"></script>
+  <script type="text/babel" data-type="module" src="./components/Footer.js"></script>
+
+  <!-- 3. Hlavní aplikace a vstupní bod -->
+  <script type="text/babel" data-type="module" src="./App.js"></script>
+  <script type="text/babel" data-type="module" src="./index.js"></script>
+
+</body>
+
+</html>
